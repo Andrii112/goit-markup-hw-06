@@ -846,7 +846,7 @@ button {
   transition: transform 250ms var(--cubic-accent);
 }
 
-.module-closure {
+.modal-closure {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -865,8 +865,10 @@ button {
   transition: fill 250ms var(--cubic-accent);
 }
 
-.module-closure:hover {
+.modal-closure:hover .modal-closure-icon,
+.modal-closure:focus .modal-closure-icon {
   fill: var(--accent-color);
+  outline: none;
 }
 
 .is-hidden {
@@ -1004,8 +1006,13 @@ button {
   margin-right: 8px;
   width: 16px;
   height: 15px;
-  border: 1px solid #212121;
+  border: 2px solid #212121;
   border-radius: 1px;
+}
+
+.policy-agreement {
+  text-decoration-line: underline;
+  color: var(--accent-color);
 }
 
 .modal-checkbox {
@@ -1018,6 +1025,10 @@ button {
 .policy:checked + .modal-policy .check-item {
   background-color: var(--accent-color);
   border: none;
+}
+
+.policy:focus + .modal-policy .check-item {
+  border-color: var(--accent-color);
 }
 
 .modal-btn {
