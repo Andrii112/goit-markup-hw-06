@@ -865,8 +865,8 @@ button {
   transition: fill 250ms var(--cubic-accent);
 }
 
-.modal-closure:hover .modal-closure-icon,
-.modal-closure:focus .modal-closure-icon {
+.modal-closure:hover > .modal-closure-icon,
+.modal-closure:focus > .modal-closure-icon {
   fill: var(--accent-color);
   outline: none;
 }
